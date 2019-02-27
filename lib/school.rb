@@ -1,3 +1,5 @@
+require "pry"
+
 class School
   attr_accessor :school_name
   attr_reader :roster
@@ -16,7 +18,11 @@ class School
   end
 
   def sort
-    @roster.sort
+    sorted_hash = @roster.sort.to_h
+    sorted = sorted_hash.map do |grade, students|
+      students.sort
+    end
+    binding.pry
   end
 
 end
