@@ -1,6 +1,5 @@
 # code here!
 class School 
-  #attr_reader :add_student
   attr_accessor :roster
   
   def initialize(name, *roster)
