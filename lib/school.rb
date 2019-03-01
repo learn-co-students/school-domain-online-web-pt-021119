@@ -8,6 +8,10 @@ class School
     @roster = {}
   end
   
+  #def roster #from supp lecture - what's this doing?
+  #  @roster.dup
+  #end
+  
   def add_student(name, grade)
     if @roster.has_key?(grade)
       @roster[grade] << name #k/v pair exists, so adding to name array
