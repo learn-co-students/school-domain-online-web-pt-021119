@@ -20,16 +20,9 @@ class School
 
   def sort
     @roster.keys.each do |grade|
-      # binding.pry
       @roster[grade].sort!
     end
     @roster = @roster.sort.to_h
-    # sorted_list = {}
-    # @roster.each do |grade, name|
-    #   name = name.sort
-    #   sorted_list[grade]=name
-    # end
-    # sorted_list
-  end
 
+  end
 end
