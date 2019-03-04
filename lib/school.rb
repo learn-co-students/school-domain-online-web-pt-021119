@@ -27,12 +27,9 @@ class School
   def sort
     sorted_roster = {}
 
-    @roster.each do |k,v|
-      v.sort
+    @roster.each do |grade, student|
+      sorted_roster[grade] = student.sort
     end
-    binding.pry
-    # @roster.sort {|k,v| k<=>v}.to_h
-    # @roster.sort.to_H
+    sorted_roster
   end
-
 end
